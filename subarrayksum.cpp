@@ -13,11 +13,7 @@ public:
                 result += rSumCount[rSum - k];
             }
 
-            if (rSumCount.contains(rSum)) {
-                rSumCount[rSum] += 1;
-            } else {
-                rSumCount[rSum] = 1;
-            }
+            rSumCount[rSum] += 1;
         }
 
         return result;    
